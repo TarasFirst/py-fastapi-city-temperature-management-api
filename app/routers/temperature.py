@@ -12,7 +12,9 @@ temperature_router = APIRouter()
 
 
 @temperature_router.post("/temperatures/update")
-async def update_temperatures_for_all_cities_endpoint(db: Session = Depends(get_db)):
+async def update_temperatures_for_all_cities_endpoint(
+        db: Session = Depends(get_db)
+):
     return await update_temperatures(db)
 
 
@@ -22,5 +24,7 @@ def get_all_temperatures_endpoint(db: Session = Depends(get_db)):
 
 
 @temperature_router.get("/temperatures/")
-def get_temperatures_by_city_endpoint(city_id: int, db: Session = Depends(get_db)):
+def get_temperatures_by_city_endpoint(
+        city_id: int, db: Session = Depends(get_db)
+):
     return get_temperatures_by_city(db, city_id=city_id)

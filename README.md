@@ -2,6 +2,13 @@
 With this tool, you can add any city to the database and retrieve temperature data for these cities,
 provided the Weather API has such data available.
 
+## Terms of Use
+
+This project uses the Visual Crossing Corporation (“Provider”) API to fetch data.
+By using this API, you agree to comply with the API Provider's
+Terms of Use, which you can review at https://www.visualcrossing.com/weather-services-terms.
+Please make sure to read and agree to these terms before using the application.
+
 ## Description
 This project is a FastAPI application that manages city data and their corresponding temperature records. The project includes:
 - A CRUD API to manage city data.
@@ -14,7 +21,7 @@ This project is a FastAPI application that manages city data and their correspon
 
 1. Clone the repository:
    ```sh
-   git clone <your-repository-URL>
+   git clone <https://github.com/TarasFirst/py-fastapi-city-temperature-management-api.git>
    cd py-fastapi-city-temperature-management-api
    ```
 

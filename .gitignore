@@ -163,3 +163,5 @@ cython_debug/
 .structure
 
 README_task.md
+
+.DS_Store
